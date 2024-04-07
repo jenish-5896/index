@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - yum install -y java-latest-openjdk-devel java-latest-openjdk-jmods
+      - dnf install -y nginx
   pre_build:
     commands:
       - echo "Installing dependencies..."
