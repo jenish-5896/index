@@ -2,8 +2,8 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      java: 1.8
+    commands:
+      - yum install -y java-latest-openjdk-devel java-latest-openjdk-jmods
   pre_build:
     commands:
       - echo "Installing dependencies..."
