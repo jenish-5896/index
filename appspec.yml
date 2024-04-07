@@ -1,5 +1,11 @@
 version: 0.0
 os: linux
-files:
-  - source: index.zip
-    destination: /var/
+#files:
+#  - source: index.zip
+#    destination: /var/
+
+hooks:
+  ApplicationStop:
+    - location: test.sh
+      timeout: 300
+      runas: root    
