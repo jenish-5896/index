@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - dnf install -y nginx
+      - dnf install awscli -y
   pre_build:
     commands:
       - echo "Installing dependencies..."
