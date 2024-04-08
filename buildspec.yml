@@ -13,7 +13,7 @@ phases:
     commands:
       - echo "Running tests..."
       - echo "Building Docker image..."
-      - aws s3 cp c b  s3://jen-cicd/ 
+      - aws s3 cp c   s3://jen-cicd/ 
      
   post_build:
     commands:
